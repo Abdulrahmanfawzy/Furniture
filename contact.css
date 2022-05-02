@@ -1,0 +1,265 @@
+
+#shows8{
+    background: #FFF;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px 0px;
+    color: #333;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    width: 250px;
+    text-align: center;
+    font-size: 12px;
+    opacity: 0;
+    transition: 1s;
+    visibility: hidden
+}
+#shows8::before{
+    content: "";
+    position: absolute;
+    border-width: 10px;
+    border-color: transparent transparent #FFF transparent;
+    border-style: solid;
+    top: -20px;
+    right: 0px
+}
+.category{
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(pic/contact.jpg);
+    background-position: top
+}
+.contact{
+    margin-top: 100px;
+}
+.contact .contact-pa{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap
+}
+.contact .contact-one{
+    width: 24%;
+}
+.contact .contact-one i{
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #FFF;
+    background: #47bebe;
+    padding: 15px;
+    border-radius: 50%;
+    transition: .4s
+}
+.contact .contact-one:hover i{
+    background: #FFF;
+    box-shadow: 0px 0px 10px 1px #f2f2f2;
+    color: #47bebe
+}
+.contact .contact-one p{
+    font-size: 14px
+}
+@media(max-width: 992px){
+    .contact .contact-one{
+        width: 49%;
+        margin-bottom: 10px
+    }
+}
+@media(max-width: 576px){
+    .contact .contact-one h3{
+        font-size: 18px;
+    }
+    .contact .contact-one i{
+        font-size: 12px;
+        padding: 10px;
+        margin-bottom: 5px
+    }
+    .contact .contact-one p{
+        font-size: 11px
+    }
+}
+@media(max-width: 400px){
+    .contact .contact-one{
+        width: 100%;
+    }
+}
+.map{
+    width: 90%;
+    margin: 50px auto 50px auto;
+}
+@media(max-width: 768px){
+    iframe{
+        height: 400px
+    }
+}
+@media(max-width: 576px){
+    iframe{
+        height: 300px
+    }
+}
+@media(max-width: 350px){
+    iframe{
+        height: auto
+    }
+}
+form{
+    margin-bottom: 50px
+}
+.message-father{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px
+}
+.message-title{
+    margin-bottom: 30px;
+}
+.message-line{
+    width: 60px;
+    height: 2px;
+    background: #47bebe;
+    position: relative;
+    margin-top: 10px
+}
+.message-line2{
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #47bebe transparent;
+    text-align: center;
+    display: inline-block;
+    margin-top: -10px;
+    margin-left: 25px
+}
+.message-input{
+    width: 48%;
+}
+.message-input input{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 5px;
+    border: 1px solid #f2f2f2;
+    outline: none;
+    border-radius: 3px;
+    color: #333
+}
+.message-text{
+    width: 48%
+}
+.message-text textarea{
+    width: 100%;
+    height: 180px;
+    padding: 10px 5px;
+    color: #333;
+    border: 1px solid #e4e4e4;
+    margin: 10px 0px;
+    outline: none; 
+    border-radius: 3px
+}
+.message-link{
+    margin-top: 9px
+}
+.message-link a{
+    display: block;
+    padding: 10px 0px;
+    width: 100%;
+    background: #47bebe;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px
+}
+
+.number::-webkit-inner-spin-button , 
+.number::-webkit-outer-spin-button{
+    -webkit-appearance: none
+}
+
+.form-social{
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+.form-social a{
+    color: #47bebe;
+    transition: .4s;
+    margin: 0px 25px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.form-social a:first-child{
+    padding: 10px 12px
+}
+.form-social a:nth-child(3){
+    padding: 10px 11px
+}
+
+.form-social a:nth-child(4){
+    padding: 10px 9px
+}
+.form-social a:nth-child(5){
+    padding: 10px 8px
+}
+.form-social i{
+    font-size: 15px
+}
+.form-social a:hover{
+    background: #47bebe;
+    color: #fff;
+}
+
+@media(max-width: 768px){
+    .message-father{
+        flex-direction: column
+    }
+    .message-input{
+        width: 100%;
+    }
+    .message-text{
+        width: 100%
+    }
+}
+
+@media(max-width: 576px){
+    .message-input input{
+        margin: 5px 0px;
+        padding: 8px 5px;
+        font-size: 12px
+    }
+    .message-text textarea{
+        margin: 5px 0px;
+        padding: 8px 5px;
+        font-size: 12px
+    }
+    .message-link a{
+        font-size: 13px;
+        padding: 8px 0px;
+    }
+    .message-title h4{
+        font-size: 17px
+    }
+    .message-line{
+        height: 1px;
+    }
+    .message-line2{
+        border-width: 4px;
+        margin-top: -8px;
+    }
+    .form-social a{
+        margin: 0px 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,434 @@
+#shows4{
+    background: #FFF;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px 0px;
+    color: #333;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    width: 250px;
+    text-align: center;
+    font-size: 12px;
+    opacity: 0;
+    transition: 1s;
+    visibility: hidden
+}
+#shows4::before{
+    content: "";
+    position: absolute;
+    border-width: 10px;
+    border-color: transparent transparent #FFF transparent;
+    border-style: solid;
+    top: -20px;
+    right: 0px
+}
+.category{
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(pic/img22.jpg);
+}
+.blog-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-left{
+    width: 30%;
+}
+.blog-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center
+}
+.blog-left .titles{
+    margin-bottom: 40px;
+}
+.blog-item .blog-image{
+    width: 40%;
+}
+.blog-item .blog-image img{
+    width: 80%;
+}
+.blog-item .blog-text{
+    width: 60%;
+}
+
+.blog-item .blog-text p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;
+    margin: 0px;
+    text-transform: capitalize;
+    
+}
+.lista{
+    margin-top: 100px
+}
+.lista .lista-title{
+    margin-bottom: 30px;
+}
+.lista li{
+    border-bottom: 1px dotted #e4e4e4;
+    margin: 10px 0px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    text-transform: capitalize
+}
+.lista i{
+    font-size: 14px;
+    margin-right: 10px;
+    color: #47bebe;
+}
+
+.blog-right{
+    width: 68%
+}
+
+.blog-right .blog-cart{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+.blog-right .cart-first{
+    width: 49%;
+    border: 1px solid #e4e4e4;
+    margin-bottom: 20px
+}
+.blog-right .cart-first .imgage{
+    width: 100%;
+}
+.cart-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px
+}
+.cart-content .date{
+    width: 20%;
+    color: #47bebe
+}
+.cart-content .date h3{
+    border-bottom: 1px solid #e4e4e4;
+    padding: 5px;
+    font-weight: bold
+}
+.cart-info{
+    width: 77%
+}
+.cart-info i{
+    font-size: 12px;
+    color: #47bebe;
+    margin-top: -10px
+}
+.cart-info section{
+    margin-bottom: 15px
+}
+.cart-content .sharta{
+    color: #e4e4e4;
+    margin: 0px 5px
+}
+.cart-info a{
+    color: #111;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: .5s
+}
+.cart-info a:hover{
+    color: #47bebe
+}
+.class-size{
+    padding: 30px 20px
+}
+
+.class-size .detail{
+    font-size: 18px
+}
+.last-cart a{
+    color: #47bebe;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block
+}
+.link-one{
+    margin: 20px 0px
+}
+.link-one i{
+    font-size: 13px
+}
+.link-two a{
+    color: #fff;
+    background: #47bebe;
+    transition: .5s;
+    border: 1px solid #47bebe;
+    padding: 11px 11px
+}
+.link-two i{
+    color: #FFF;
+    vertical-align: middle;
+    transition: .4s
+}
+.link-two a:hover{
+    color: #47bebe;
+    background: #fff;
+    
+}
+.link-two a:hover i{
+    padding-left: 5px;
+    color: #47bebe
+}
+
+.blog-links{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.blog-links a{
+    color: #FFF;
+    background: #47bebe;
+    padding: 10px 12px;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 0px 5px;
+    font-size: 15px;
+    text-decoration: none
+}
+.blog-links .one{
+    padding: 6px 15px
+}
+.blog-links .two{
+    padding: 6px 13px
+}
+
+@media(max-width: 991px) and (min-width: 769px){
+    .blog-item .blog-text p{
+        font-size: 12px;
+    }
+    .blog-text section{
+        font-size: 12px;
+    }
+    .blog-item .blog-image img{
+        width: 90%
+    }
+    .blog-item .blog-text{
+        width: 70%
+    }
+    .cart-content{
+        margin-top: 0px
+    }
+    .cart-content .date h3{
+        font-size: 15px
+    }
+    .cart-content .date p{
+        font-size: 13px
+    }
+    .cart-info section{
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+    .class-size .detail{
+        font-size: 12px
+    }
+    .cart-info a{
+        margin-top: 5px
+    }
+    .last-cart p{
+        font-size: 13px
+    }
+    .last-cart a{
+        font-size: 12px;
+    }
+    .link-two a{
+        padding: 10px 10px;
+    }
+    .cart-info{
+        width: 75%;
+    }
+    .blog-left .titles{
+        font-size: 21px
+    }
+    .lista .lista-title {
+        font-size: 22px;
+    }
+    .lista li{
+        font-size: 13px;
+    }
+    .lista i {
+        font-size: 11px;
+        margin-right: 6px;
+    }
+}
+
+@media(max-width:768px){
+    .blog-flex{
+        flex-direction: column
+    }
+    .blog-left{
+        width: 100%;
+        margin-bottom: 30px
+    }
+    .blog-right{
+        width: 100%
+    }
+    
+}
+
+@media(max-width: 576px){
+    .blog-right .cart-first{
+        width: 100%
+    }
+    .cart-content .date h3{
+        font-size: 17px;
+    }
+    .cart-content .date p{
+        font-size: 14px
+    }
+    .cart-info section {
+        margin-bottom: 10px;
+        font-size: 13px
+    }
+    .cart-info section span{
+        font-size: 13px
+    }
+    .class-size .detail{
+        font-size: 14px
+    }
+    .last-cart p{
+        font-size: 13px
+    }
+    .last-cart a{
+        font-size: 12px
+    }
+    .link-two a{
+        padding: 10px 12px;
+    }
+}
+
+@media(max-width: 350px){
+    .cart-content{
+        flex-direction: column
+    }
+    .cart-info{
+        width: 100%
+    }
+    .cart-info section {
+        font-size: 12px
+    }
+    .cart-info section span{
+        font-size: 12px
+    }
+    .cart-content .date{
+        width: 35%
+    }
+    .cart-info a{
+        margin-bottom: 10px
+    }
+    .last-cart p {
+        font-size: 10px;
+    }
+    .last-cart a {
+        font-size: 11px;
+    }
+    .link-two a{
+        padding: 8px 7px;
+    }
+    .class-size .detail{
+        font-size: 11px
+    }
+    .blog-left .titles{
+        font-size: 13px
+    }
+    .blog-item{
+        flex-direction: column
+    }
+    .blog-item .blog-image {
+        width: 100%;
+    }
+    .blog-item .blog-image img{
+        width: 100%;
+    }
+    .blog-item .blog-text {
+        width: 100%;
+        margin-top: 10px;
+        text-align: center
+    }
+    .blog-item .blog-text p{
+        font-size: 12px
+    }
+    .blog-item .blog-text section{
+        font-size: 11px
+    }
+    .lista .lista-title{
+        font-size: 15px
+    }
+    .lista li{
+        font-size: 12px
+    }
+    .lista i{
+        font-size: 12px;
+        margin-right: 5px;
+    }
+    .cart-content{
+        margin-top: 0px
+    }
+    .class-size {
+        padding: 20px 20px;
+    }   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
